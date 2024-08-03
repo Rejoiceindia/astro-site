@@ -14,10 +14,14 @@ const { name, bio, postion, image, instagram, github, youtube, facebook } =
 ---
 
 <div
-  class="p-2 md:px-5 md:py-5 rounded-xl bg-softPink flex flex-col gap-8 items-center min-w-[380px] w-[380px]"
+  class="px-2 py-5 md:px-5 md:py-5 rounded-xl bg-softPink flex flex-col gap-8 items-center ] w-[95%] md:min-w-[380px] md:w-[380px] hover:shadow-xl cursor-pointer border-2 border-lightRed"
 >
   <span class="w-full flex items-center gap-5">
-    <img src={image} alt="alt" class="rounded-full size-12 md:size-24" />
+    <img
+      src={image}
+      alt="alt"
+      class="rounded-full size-16 md:size-24 object-cover object-center"
+    />
     <span class="flex flex-col">
       <h5 class="text-md md:text-2xl font-bold">{name}</h5>
       <h6 class="text-darkGray">{postion}</h6>

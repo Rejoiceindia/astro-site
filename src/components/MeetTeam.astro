@@ -3,9 +3,11 @@ import { Team } from "../Constants";
 import Card from "./Card.astro";
 ---
 
-<section class="w-full mt-5">
+<section class="w-full mt-5 min-h-screen overflow-auto">
   <h3 class="text-5xl font-bold">Meet the Team</h3>
-  <section class="flex justify-center items-center gap-5 overflow-x-scroll px-10">
+  <section
+    class="flex flex-col md:flex-row items-center gap-5 overflow-x-scroll px-0 md:px-10 mt-5"
+  >
     {
       Team.map((member) => (
         <Card
