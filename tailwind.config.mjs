@@ -11,6 +11,7 @@ export default {
         darkGray: "#757575",
         matteBlack: "#212121",
         softPink: "#FFEBEE",
+        blue: "#0056B3",
       },
     },
   },

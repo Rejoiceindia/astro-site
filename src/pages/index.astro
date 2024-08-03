@@ -1,7 +1,57 @@
 ---
+import { Image } from "astro:assets";
 import RootLayout from "../layouts/RootLayout.astro";
+import { homePageImages } from "../Constants";
 ---
 
 <RootLayout>
-  <p>hello</p>
+  <section
+    class="w-full flex flex-col-reverse md:flex-row items-center justify-between"
+  >
+    <section class="w-full md:w-1/2 flex flex-col justify-center gap-5">
+      <h1 class="text-4xl font-bold md:text-7xl">
+        Navigate <span class="text-blue">Real Estate</span> with <span
+          class="text-blue">Confidence</span
+        >
+      </h1>
+
+      <h2
+        class="text-xl text-darkGray font-light text-center md:text-3xl md:text-left"
+      >
+        Experience, Expertise, Excellence
+      </h2>
+      <button
+        class="bg-blue text-white py-2 text-center w-full rounded-xl md:w-[30%] md:text-2xl"
+      >
+        Contact Us
+      </button>
+    </section>
+    <Image
+      src={homePageImages.home1}
+      alt="Property in Mumbai"
+      width={320}
+      height={209}
+      class="w-full h-auto my-5 md:w-[40%]"
+    />
+  </section>
+  <section
+    class="w-full flex flex-col-reverse md:flex-row-reverse items-center justify-between"
+  >
+    <section class="w-full md:w-1/2 flex flex-col justify-center gap-5">
+      <h2 class="text-4xl font-bold md:text-7xl">Welcome to Rejoice</h2>
+
+      <p class="text-xl md:text-4xl">
+        At Rejoice Estate Consultants, we provide top real estate services. Our
+        experienced team guides you through every step, ensuring you make
+        informed and confident decisions.
+      </p>
+    </section>
+    <Image
+      src={homePageImages.home2}
+      alt="Property in Mumbai"
+      width={320}
+      height={209}
+      class="w-full h-auto my-5 md:w-[40%]"
+    />
+  </section>
 </RootLayout>
