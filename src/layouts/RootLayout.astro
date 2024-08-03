@@ -1,0 +1,46 @@
+---
+import Navbar from "../components/Navbar.astro";
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = "Rejoice Estate Consultants",
+  description = "Welcome to Rejoice Estate Consultants, your trusted real estate experts in Mumbai's Western Suburbs. Our dedicated team offers comprehensive services including buying, selling, leasing, and investing in properties. With a deep understanding of the local market and a vast network of 10,000+ real estate agents, we ensure you receive the best opportunities and insights. Our innovative solutions and exceptional customer service are designed to make your real estate journey smooth and successful. Contact us today to experience the Rejoice Estate Consultants difference and achieve your real estate goals with confidence",
+} = Astro.props;
+const keywords =
+  "Rejoice Estate Consultants, real estate experts, Mumbai's Western Suburbs, buying properties, selling properties, leasing properties, investing in properties, local market, real estate agents, innovative solutions, customer service, real estate journey, real estate goals";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body class="font-[Outfit] bg-white min-h-screen text-matteBlack relative">
+    <nav class="fixed top-0 w-full"><Navbar /></nav>
+    <section class="mt-[80px]">
+      <slot />
+    </section>
+  </body>
+</html>
+
+<style is:global></style>
