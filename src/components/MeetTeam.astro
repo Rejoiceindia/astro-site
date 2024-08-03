@@ -1,0 +1,24 @@
+---
+import { Team } from "../Constants";
+import Card from "./Card.astro";
+---
+
+<section class="w-full mt-5">
+  <h3 class="text-5xl font-bold">Meet the Team</h3>
+  <section class="flex justify-center items-center gap-5 overflow-x-scroll px-10">
+    {
+      Team.map((member) => (
+        <Card
+          image={member.image}
+          name={member.name}
+          bio={member.bio}
+          postion={member.position}
+          youtube={member.youtube}
+          instagram={member.instagram}
+          github={member.github}
+          facebook={member.facebook}
+        />
+      ))
+    }
+  </section>
+</section>

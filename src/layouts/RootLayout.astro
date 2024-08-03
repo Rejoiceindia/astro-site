@@ -43,4 +43,13 @@ const keywords =
   </body>
 </html>
 
-<style is:global></style>
+<style is:global>
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow: hidden;
+  }
+</style>

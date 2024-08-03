@@ -1,6 +1,8 @@
-{/* <a href="https://www.flaticon.com/free-icons/menu-bar" title="menu bar icons">
+{
+  /* <a href="https://www.flaticon.com/free-icons/menu-bar" title="menu bar icons">
   Menu bar icons created by BomSymbols - Flaticon
-</a>; */}
+</a>; */
+}
 
 export const homePageImages = {
   home1:
@@ -8,3 +10,38 @@ export const homePageImages = {
   home2:
     "https://res.cloudinary.com/aryansharma/image/upload/v1722682270/rejoiceHomeImage2.png",
 };
+
+export const Team = [
+  {
+    name: "Prashant Zende",
+    bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
+    position: "Founder",
+    image: "",
+    instagram:
+      "https://www.instagram.com/realestatewithprashant/?igsh=ZGUzMzM3NWJiOQ%3D%3D",
+    facebook:
+      "https://www.facebook.com/rejoiceestateconsultants?mibextid=ZbWKwL",
+    github: "",
+    youtube: "",
+  },
+  {
+    name: "Kamal Raj",
+    bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
+    position: "Tech Co-Founder",
+    image: "",
+    instagram: "",
+    facebook: "",
+    github: "https://kamalabot.github.io/M3nD3/",
+    youtube: "https://www.youtube.com/@insightbuilder",
+  },
+  {
+    name: "Jeremy Shows",
+    bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
+    position: "Tech Co-Founder",
+    image: "",
+    instagram: "",
+    facebook: "",
+    github: "",
+    youtube: "",
+  },
+];

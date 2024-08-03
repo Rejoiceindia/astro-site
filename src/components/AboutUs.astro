@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+import { homePageImages } from "../Constants";
+---
+
+<section class="w-full flex items-center justify-between">
+  <section class="w-full md:w-[50%] flex flex-col gap-10">
+    <h1 class="text-4xl font-bold md:text-7xl">About Us</h1>
+    <p class="text-2xl">
+      At Rejoice Estate Consultants, we're a team of passionate professionals
+      with a vision for the future. While we've established ourselves in
+      Mumbai's Western Suburbs through successful real estate investments and
+      consultations, we believe there's a smarter way to navigate this dynamic
+      market.
+    </p>
+  </section>
+  <Image
+    src="https://res.cloudinary.com/aryansharma/image/upload/v1722682271/aboutPage.png"
+    width={320}
+    height={209}
+    class="hidden md:w-[40%] md:inline-block mt-5"
+    alt="Property in Mumbai"
+  />
+</section>

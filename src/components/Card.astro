@@ -1,0 +1,59 @@
+---
+interface Props {
+  name: string;
+  bio: string;
+  postion: string;
+  image: string;
+  instagram?: string;
+  github?: string;
+  youtube?: string;
+  facebook?: string;
+}
+const { name, bio, postion, image, instagram, github, youtube, facebook } =
+  Astro.props;
+---
+
+<div
+  class="p-2 md:px-5 md:py-5 rounded-xl bg-softPink flex flex-col gap-8 items-center min-w-[380px] w-[380px]"
+>
+  <span class="w-full flex items-center gap-5">
+    <img src={image} alt="alt" class="rounded-full size-12 md:size-24" />
+    <span class="flex flex-col">
+      <h5 class="text-md md:text-2xl font-bold">{name}</h5>
+      <h6 class="text-darkGray">{postion}</h6>
+    </span>
+  </span>
+  <p class="">
+    {bio}
+  </p>
+  <span class="w-full text-left space-x-2">
+    {
+      facebook && (
+        <a href={facebook}>
+          <ion-icon name="logo-facebook" class="text-4xl" />
+        </a>
+      )
+    }
+    {
+      instagram && (
+        <a href={instagram}>
+          <ion-icon name="logo-instagram" class="text-4xl" />
+        </a>
+      )
+    }
+    {
+      github && (
+        <a href={github}>
+          <ion-icon name="logo-github" class="text-4xl" />
+        </a>
+      )
+    }
+    {
+      youtube && (
+        <a href={youtube}>
+          <ion-icon name="logo-youtube" class="text-4xl" />
+        </a>
+      )
+    }
+  </span>
+</div>
