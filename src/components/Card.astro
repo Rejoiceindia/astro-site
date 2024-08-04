@@ -14,7 +14,7 @@ const { name, bio, postion, image, instagram, github, youtube, facebook } =
 ---
 
 <div
-  class="px-2 py-5 md:px-5 md:py-5 rounded-xl bg-softPink flex flex-col gap-8 items-center w-[95%] md:min-w-[380px] md:w-[380px] hover:shadow-xl cursor-pointer border-2 border-lightRed -z-10"
+  class="px-2 py-5 md:px-5 md:py-5 rounded-xl bg-softPink flex flex-col gap-8 items-center w-[95%] md:min-w-[380px] md:w-[380px] shadow-lg cursor-pointer border-2 border-lightRed -z-10"
 >
   <span class="w-full flex items-center gap-5">
     <img
@@ -30,7 +30,7 @@ const { name, bio, postion, image, instagram, github, youtube, facebook } =
   <p class="">
     {bio}
   </p>
-  <span class="w-full text-left space-x-2 ">
+  <span class="w-full text-left space-x-2">
     {
       facebook && (
         <a href={facebook}>
