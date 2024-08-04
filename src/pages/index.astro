@@ -20,18 +20,19 @@ import { homePageImages } from "../Constants";
       >
         Experience, Expertise, Excellence
       </h2>
-      <button
+      <a
+        href="/inquiry"
         class="bg-blue text-white py-2 text-center w-full rounded-xl md:w-[30%] md:text-2xl"
       >
         Contact Us
-      </button>
+      </a>
     </section>
     <Image
       src={homePageImages.home1}
       alt="Property in Mumbai"
       width={320}
       height={209}
-      class="w-full h-auto my-5 md:w-[40%]"
+      class="w-full h-auto my-5 md:w-[40%] rounded-2xl"
     />
   </section>
   <section
@@ -51,7 +52,7 @@ import { homePageImages } from "../Constants";
       alt="Property in Mumbai"
       width={320}
       height={209}
-      class="w-full h-auto my-5 md:w-[40%]"
+      class="w-full md:h-[450px] my-5 md:w-[40%] rounded-2xl object-cover object-center"
     />
   </section>
 </RootLayout>

@@ -6,9 +6,9 @@
 
 export const homePageImages = {
   home1:
-    "https://res.cloudinary.com/aryansharma/image/upload/v1722682247/rejoiceHomePage.png",
+    "https://res.cloudinary.com/aryansharma/image/upload/v1722778866/HomePage1.jpg",
   home2:
-    "https://res.cloudinary.com/aryansharma/image/upload/v1722682270/rejoiceHomeImage2.png",
+    "https://res.cloudinary.com/aryansharma/image/upload/v1722778866/HomePage2.jpg",
 };
 
 export const Team = [

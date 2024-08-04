@@ -1,22 +1,46 @@
 ---
+import MeetTeam from "../components/MeetTeam.astro";
 import RootLayout from "../layouts/RootLayout.astro";
 ---
 
-<RootLayout title="Careers | Rejoice Estate Consultants">
-  <section class="w-full flex flex-col gap-10">
-    <h2 class="text-4xl font-bold md:text-7xl">Careers</h2>
-    <p class="text-2xl">
-      Passionate about real estate and innovation? Join Rejoice Estate
-      Consultants to help revolutionize the industry in Mumbai’s Western
-      Suburbs. We seek talented, driven individuals for a collaborative and
-      growth-focused environment. Explore our openings and apply today to
-      advance your career and make a difference with us
-    </p>
+<RootLayout title="Inquiry | Rejoice Estate Consultants">
+  <section
+    class="w-full flex flex-col-reverse md:flex-row gap-20 items-center justify-between"
+  >
+    <!-- Heading -->
+    <section
+      class="flex flex-col-reverse md:flex-row justify-between w-full md:w-[50%]"
+    >
+      <div class="flex flex-col gap-5 md:gap-20">
+        <h1 class="text-4xl font-semibold">
+          Join Our Dynamic Team and Shape the Future of Real Estate!
+        </h1>
+        <span class="md:text-2xl">
+          <p>
+            Are you passionate about real estate and driven by innovation? At
+            Rejoice Estate Consultants, we're always looking for talented
+            individuals to join our forward-thinking team. Work on exciting
+            projects, grow your career, and make a difference. Explore our
+            current openings and apply today to be a part of our journey towards
+            excellence!
+          </p>
+        </span>
+      </div>
+    </section>
+    <!-- Image -->
+    <img
+      src="https://i.pinimg.com/564x/1f/ba/0a/1fba0a22a8089d9ffdbbe04fe97efeb6.jpg"
+      alt="Looking for property in mumbai"
+      class="w-full object-cover place-items-center md:w-[50%] h-auto rounded-2xl"
+    />
+  </section>
+
+  <div class="flex flex-col gap-5 my-5 mt-10">
     <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSd08zDUvIseilWQnXR9Nh07awsyVadQvaFjsp8qkv_2LMoZtg/viewform"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdsEa6TMebJiWn4K_O6FvVHOPuNBWNL4ICsK7X_AmxKxGf70w/viewform"
       class="flex items-center gap-5 text-xl md:text-2xl"
       ><ion-icon name="document-outline" class=""></ion-icon>
-      <p>Fill the form to submit any business inquiry</p></a
+      <p>Fill the form and submit your resume</p></a
     >
     <a
       href="https://www.instagram.com/realestatewithprashant/?igsh=ZGUzMzM3NWJiOQ%3D%3D"
@@ -32,5 +56,15 @@ import RootLayout from "../layouts/RootLayout.astro";
       <ion-icon name="logo-facebook"></ion-icon>
       <p>Reach out via Facebook</p>
     </a>
-  </section>
+  </div>
+
+  <MeetTeam />
 </RootLayout>
+
+<style is:inline>
+  a {
+    :hover {
+      text-decoration: underline;
+    }
+  }
+</style>
