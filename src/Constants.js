@@ -17,7 +17,7 @@ export const Team = [
     bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
     position: "Founder",
     image:
-      "https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrPrashant.jpg",
+      "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/MrPrashant",
     instagram:
       "https://www.instagram.com/realestatewithprashant/?igsh=ZGUzMzM3NWJiOQ%3D%3D",
     facebook:
@@ -30,7 +30,7 @@ export const Team = [
     bio: "Kamal Raj our tech co-founder is Wikipedia of tech insights and knowledge. His indepth insights & attention to detail is visible in his YouTube channel linked below.",
     position: "Tech Co-Founder",
     image:
-      "https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrKamal.png",
+      "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/MrKamal",
     instagram: "",
     facebook: "",
     github: "https://kamalabot.github.io/M3nD3/",
@@ -41,7 +41,7 @@ export const Team = [
     bio: "Jermey shows our tech co-founders is python wizard mastered the art of integration of AI in his every day work and business operations.",
     position: "Tech Co-Founder",
     image:
-      "https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrJeremy.jpg",
+      "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/MrJeremy",
     instagram: "",
     facebook: "",
     github: "https://github.com/DigitalHallucinations",
@@ -52,7 +52,7 @@ export const Team = [
     bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
     position: "Intern",
     image:
-      "  https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrGupta.jpg",
+      "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/MrGupta",
     instagram: "",
     facebook: "",
     github: "https://github.com/shivamgcodes",
@@ -63,10 +63,21 @@ export const Team = [
     bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
     position: "Intern",
     image:
-      "https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrTejas.png",
+      "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/MrTejas",
     instagram: "",
     facebook: "",
     github: "https://github.com/tejas485",
+    youtube: "",
+  },
+  {
+    name: "Aryan Sharma",
+    bio: "Aryan Sharma is an intern and a full-stack JavaScript developer at Rejoice Estate Consultants Dedicated to contributing his technical skills and knowledge to the team.",
+    position: "Intern",
+    image:
+      "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/Aryansharma",
+    instagram: "",
+    facebook: "",
+    github: "https://github.com/23Aryansharma11",
     youtube: "",
   },
 ];
