@@ -27,7 +27,7 @@ export const Team = [
   },
   {
     name: "Kamal Raj",
-    bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
+    bio: "Kamal Raj our tech co-founder is Wikipedia of tech insights and knowledge. His indepth insights & attention to detail is visible in his YouTube channel linked below.",
     position: "Tech Co-Founder",
     image:
       "https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrKamal.png",
@@ -38,13 +38,13 @@ export const Team = [
   },
   {
     name: "Jeremy Shows",
-    bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
+    bio: "Jermey shows our tech co-founders is python wizard mastered the art of integration of AI in his every day work and business operations.",
     position: "Tech Co-Founder",
     image:
       "https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrJeremy.jpg",
     instagram: "",
     facebook: "",
-    github: "/",
+    github: "https://github.com/DigitalHallucinations",
     youtube: "",
   },
   {
@@ -55,7 +55,7 @@ export const Team = [
       "  https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrGupta.jpg",
     instagram: "",
     facebook: "",
-    github: "/",
+    github: "https://github.com/shivamgcodes",
     youtube: "",
   },
   {
@@ -66,7 +66,7 @@ export const Team = [
       "https://res.cloudinary.com/aryansharma/image/upload/v1722690981/MrTejas.png",
     instagram: "",
     facebook: "",
-    github: "/",
+    github: "https://github.com/tejas485",
     youtube: "",
   },
 ];

@@ -6,53 +6,39 @@ import { homePageImages } from "../Constants";
 
 <RootLayout>
   <section
-    class="w-full flex flex-col-reverse md:flex-row items-center justify-between"
+    class="flex flex-col h-[calc(100vh-100px)] items-center justify-between"
   >
-    <section class="w-full md:w-1/2 flex flex-col justify-center gap-5">
-      <h1 class="text-4xl font-bold md:text-7xl">
-        Navigate <span class="text-blue">Real Estate</span> with <span
-          class="text-blue">Confidence</span
-        >
-      </h1>
-
-      <h2
-        class="text-xl text-darkGray font-light text-center md:text-3xl md:text-left"
+    <section
+      class="w-full flex flex-col-reverse md:flex-row items-center justify-between"
+    >
+      <section
+        class="w-full flex flex-col-reverse md:flex-row-reverse items-center justify-between"
       >
-        Experience, Expertise, Excellence
-      </h2>
-      <a
-        href="/inquiry"
-        class="bg-blue text-white py-2 text-center w-full rounded-xl md:w-[30%] md:text-2xl"
-      >
-        Contact Us
-      </a>
-    </section>
-    <Image
-      src={homePageImages.home1}
-      alt="Property in Mumbai"
-      width={320}
-      height={209}
-      class="w-full h-auto my-5 md:w-[40%] rounded-2xl shadow-xl"
-    />
-  </section>
-  <section
-  class="w-full flex flex-col-reverse md:flex-row-reverse items-center justify-between"
-  >
-    <section class="w-full md:w-1/2 flex flex-col justify-center gap-5">
-      <h2 class="text-4xl font-bold md:text-7xl">Welcome to Rejoice</h2>
+        <section class="w-full md:w-1/2 flex flex-col justify-center gap-5">
+          <h2 class="text-4xl font-bold md:text-7xl">Welcome to Rejoice</h2>
 
-      <p class="text-xl md:text-4xl">
-        At Rejoice Estate Consultants, we provide top real estate services. Our
-        experienced team guides you through every step, ensuring you make
-        informed and confident decisions.
-      </p>
+          <p class="text-xl md:text-4xl">
+            At Rejoice Estate Consultants, we provide top real estate services.
+            Our experienced team guides you through every step, ensuring you
+            make informed and confident decisions.
+          </p>
+        </section>
+        <Image
+          src={homePageImages.home2}
+          alt="Property in Mumbai"
+          width={320}
+          height={209}
+          class="w-full md:h-[450px] my-5 md:w-[40%] rounded-2xl object-cover object-center shadow-xl"
+        />
+      </section>
     </section>
-    <Image
-      src={homePageImages.home2}
-      alt="Property in Mumbai"
-      width={320}
-      height={209}
-      class="w-full md:h-[450px] my-5 md:w-[40%] rounded-2xl object-cover object-center shadow-xl"
-    />
+    <footer class="w-full h-auto">
+      <img
+        src="https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/footer1"
+        alt="footer"
+        class="w-full h-auto"
+        loading="lazy"
+      />
+    </footer>
   </section>
 </RootLayout>

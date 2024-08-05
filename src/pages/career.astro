@@ -1,8 +1,9 @@
 ---
+import { Icon } from "astro-icon/components";
 import RootLayout from "../layouts/RootLayout.astro";
 ---
 
-<RootLayout title="Inquiry | Rejoice Estate Consultants">
+<RootLayout title="Career | Rejoice Estate Consultants">
   <section
     class="w-full flex flex-col-reverse md:flex-row gap-20 items-center justify-between"
   >
@@ -30,24 +31,24 @@ import RootLayout from "../layouts/RootLayout.astro";
     <img
       src="https://i.pinimg.com/564x/1f/ba/0a/1fba0a22a8089d9ffdbbe04fe97efeb6.jpg"
       alt="Looking for property in mumbai"
-      class="w-full object-cover place-items-center md:w-[50%] h-auto rounded-2xl shadow-xl"
+      class="w-full object-cover object-center place-items-center md:w-[50%] h-[400px] rounded-2xl shadow-xl"
     />
   </section>
 
-  <div class="flex flex-col gap-5 my-5 mt-10">
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSdsEa6TMebJiWn4K_O6FvVHOPuNBWNL4ICsK7X_AmxKxGf70w/viewform"
-      class="flex items-center gap-5 text-xl md:text-2xl"
-      ><ion-icon name="document-outline" class=""></ion-icon>
-      <p>Fill the form and submit your resume</p></a
-    >
-  </div>
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSd08zDUvIseilWQnXR9Nh07awsyVadQvaFjsp8qkv_2LMoZtg/viewform"
+    class="w-full flex items-center gap-5"
+  >
+    <Icon name="form" class="size-20" />
+    <p class="md:text-2xl">Fill out the form to submit your resume</p>
+  </a>
 </RootLayout>
 
 <style is:inline>
   a {
     :hover {
       text-decoration: underline;
+      cursor: pointer;
     }
   }
 </style>

@@ -9,12 +9,14 @@ interface Props {
   youtube?: string;
   facebook?: string;
 }
+
+import { Icon } from "astro-icon/components";
 const { name, bio, postion, image, instagram, github, youtube, facebook } =
   Astro.props;
 ---
 
 <div
-  class="px-2 py-5 md:px-5 md:py-5 rounded-xl bg-softPink flex flex-col gap-8 items-center w-[95%] md:min-w-[380px] md:w-[380px] shadow-lg cursor-pointer border-2 border-lightRed -z-10"
+  class="px-2 py-5 md:px-5 md:py-5 rounded-xl bg-softPink flex flex-col gap-8 items-center justify-between w-[95%] md:min-w-[380px] md:w-[380px] shadow-lg cursor-pointer border-2 border-lightRed h-[340px] md:h-[380px]"
 >
   <span class="w-full flex items-center gap-5">
     <img
@@ -30,32 +32,32 @@ const { name, bio, postion, image, instagram, github, youtube, facebook } =
   <p class="">
     {bio}
   </p>
-  <span class="w-full text-left space-x-2">
+  <span class="w-full text-left space-x-2 z-auto flex items-center">
     {
       facebook && (
         <a href={facebook}>
-          <ion-icon name="logo-facebook" class="text-4xl z-0" />
+          <Icon name="facebook" class="size-9 inline" />
         </a>
       )
     }
     {
       instagram && (
         <a href={instagram}>
-          <ion-icon name="logo-instagram" class="text-4xl z-0" />
+          <Icon name="insta" class="size-9 inline" />
         </a>
       )
     }
     {
       github && (
         <a href={github}>
-          <ion-icon name="logo-github" class="text-4xl z-0" />
+          <Icon name="github" class="size-9 inline" />
         </a>
       )
     }
     {
       youtube && (
         <a href={youtube}>
-          <ion-icon name="logo-youtube" class="text-4xl z-0" />
+          <Icon name="youtube" class="size-9 inline " />
         </a>
       )
     }
