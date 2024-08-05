@@ -8,4 +8,6 @@ export default defineConfig({
   image: {
     domains: ["res.cloudinary.com"],
   },
+  site: "https://RejoiceIndia.github.io",
+  base: "/astro-site"
 });
