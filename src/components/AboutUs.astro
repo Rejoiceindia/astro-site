@@ -1,46 +1,45 @@
 ---
 import { Image } from "astro:assets";
+import { cloudImages } from "../../constants";
 ---
 
-<section class="w-full flex items-center justify-between">
-  <section class="w-full md:w-[50%] flex flex-col gap-10">
-    <h1 class="text-4xl font-bold md:text-7xl">About Us</h1>
-    <p class="text-2xl">
-      At Rejoice Estate Consultants, we're a team of passionate professionals
-      with a vision for the future. While we've established ourselves in
-      Mumbai's Western Suburbs through successful real estate investments and
-      consultations, we believe there's a smarter way to navigate this dynamic
-      market.
+<section>
+  <section
+    class="w-full  flex flex-col-reverse gap-5 items-center justify-center lg:flex-row lg:justify-between mt-5"
+  >
+    <!-- Text -->
+    <section class="w-full md:w-[90%] lg:w-[50%] ">
+      <h1 class="font-bold text-4xl md:text-5xl mb-5">About Us</h1>
+      <p class="text-lg md:text-xl xl:text-2xl 2xl:text-3xl">
+        At Rejoice Estate Consultants, we're a team of passionate professionals
+        with a vision for the future. While we've established ourselves in
+        Mumbai's Western Suburbs through successful real estate investments and
+        consultations, we believe there's a smarter way to navigate this dynamic
+        market.
+      </p>
+    </section>
+    <!-- Image -->
+    <Image
+      src={cloudImages.about}
+      alt="About us page"
+      width={1000}
+      height={1000}
+      class="w-full md:w-[90%] lg:w-[40%] h-auto object-cover object-center rounded-3xl shadow-xl aspect-video"
+    />
+  </section>
+
+  <section class="w-full mt-10 flex flex-col gap-8">
+    <p class="text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
+      Our core investment model has delivered strong yields, but we recognize its limitations. In this model, growth hinges heavily on capital and is directly proportionate to investments and funding available. Especially in a city like Mumbai, where property prices are skyrocketing, this has become a major factor that stunts the growth of our business. This inspired us to explore beyond current operations in search of a more scalable path.
+    </p>
+    <p class="text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
+      While real estate services hold immense potential for growth, the industry remains largely unorganised and reliant on manual processes. This is precisely where we aim to disrupt the status quo.
+    </p>
+    <p class="text-lg md:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed">
+      We're pioneering the future of real estate with cutting-edge AI and Large Language Model (LLM) solutions. By integrating automation and streamlining workflows, we're committed to transforming the way business is done in the real estate landscape.
+    </p>
+    <p class="text-darkGray text-md md:text-lg text-center font-light mb-10">
+      Stay tuned as we pave the way for a more efficient, transparent, and data-driven real estate experience for all!
     </p>
   </section>
-  <Image
-    src="https://res.cloudinary.com/aryansharma/image/upload/v1722778866/about.jpg"
-    width={320}
-    height={209}
-    class="hidden md:w-[40%] md:inline-block mt-5 rounded-2xl shadow-xl"
-    alt="Property in Mumbai "
-  />
 </section>
-<p class="text-left text-xl md:text-2xl mt-5">
-  Our core investment model has delivered strong yields, but we recognize its
-  limitations. In this model growth hinges heavily on capital and is directly
-  proportionate to investments/ funding available. Especially in a city like
-  Mumbai where property prices are skyrocketing this has become a major factor
-  that stunt growth of our business. This inspired us to explore beyond current
-  operations in search of a more scalable path.
-</p>
-<p class="text-center text-xl md:text-2xl mt-5">
-  While real estate services hold immense potential for growth, yet the industry
-  remains largely unorganised and reliant on manual processes. This is precisely
-  where we aim to disrupt the status quo.
-</p>
-<p class="text-center text-xl md:text-2xl mt-5">
-  We're pioneering the future of real estate with cutting-edge AI and Large
-  Language Model (LLM) solutions. By integrating automation and streamlining
-  workflows, we're committed to transforming the way business is done in real
-  estate landscape.
-</p>
-<p class="text-darkGray text-center text-md md:text-xl mt-5 md:font-light">
-  Stay tuned as we pave the way for a more efficient, transparent, and
-  data-driven real estate experience for all!
-</p>

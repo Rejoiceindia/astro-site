@@ -6,8 +6,8 @@ import icon from "astro-icon";
 export default defineConfig({
   integrations: [tailwind(), icon()],
   image: {
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com", "img.freepik.com"],
   },
   site: "https://RejoiceIndia.github.io",
-  base: "/astro-site"
+  base: "/astro-site",
 });

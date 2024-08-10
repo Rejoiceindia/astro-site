@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
   title?: string;
   description?: string;
@@ -35,11 +36,14 @@ const keywords =
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
-  <body class="font-[Outfit] bg-white h-auto text-matteBlack relative">
-    <nav class="fixed top-0 w-full"><Navbar /></nav>
-    <section class="mt-[100px] px-5 md:px-10">
+  <body
+    class="flex flex-col min-h-screen font-[Outfit] bg-white h-auto text-matteBlack relative"
+  >
+    <Navbar />
+    <main class="flex-grow mt-[80px] px-5 md:px-10 lg:px-20">
       <slot />
-    </section>
+    </main>
+    <Footer />
   </body>
 </html>
 

@@ -2,21 +2,34 @@
 interface Props {
   name: string;
   bio: string;
-  postion: string;
+  position?: string;
   image: string;
   instagram?: string;
   github?: string;
   youtube?: string;
   facebook?: string;
+  portfolio?: string;
 }
 
 import { Icon } from "astro-icon/components";
-const { name, bio, postion, image, instagram, github, youtube, facebook } =
-  Astro.props;
+const {
+  name,
+  bio,
+  position = "Contributor",
+  image,
+  instagram,
+  github,
+  youtube,
+  facebook,
+  portfolio,
+} = Astro.props;
 ---
 
 <div
-  class="px-2 py-5 md:px-5 md:py-5 rounded-xl bg-softPink flex flex-col gap-8 items-center justify-between w-[95%] md:min-w-[380px] md:w-[380px] shadow-lg cursor-pointer border-2 border-lightRed h-[340px] md:h-[380px]"
+  class={`
+    px-2 py-5 md:px-5 md:py-5 rounded-xl  flex flex-col gap-8 items-center justify-between w-[95%] md:min-w-[380px] md:w-[380px] shadow-lg cursor-pointer border-2  h-[340px] md:h-[380px] 
+    ${position === "Contributor" ? "bg-[#F0F0F0] border-gray-300" : "bg-softPink border-lightRed"}
+    `}
 >
   <span class="w-full flex items-center gap-5">
     <img
@@ -26,7 +39,7 @@ const { name, bio, postion, image, instagram, github, youtube, facebook } =
     />
     <span class="flex flex-col">
       <h5 class="text-md md:text-2xl font-bold">{name}</h5>
-      <h6 class="text-darkGray">{postion}</h6>
+      <h6 class="text-darkGray">{position}</h6>
     </span>
   </span>
   <p class="">
@@ -43,7 +56,7 @@ const { name, bio, postion, image, instagram, github, youtube, facebook } =
     {
       instagram && (
         <a href={instagram}>
-          <Icon name="insta" class="size-9 inline" />
+          <Icon name="insta" class="size-9 inline rounded-full" />
         </a>
       )
     }
@@ -58,6 +71,13 @@ const { name, bio, postion, image, instagram, github, youtube, facebook } =
       youtube && (
         <a href={youtube}>
           <Icon name="youtube" class="size-9 inline " />
+        </a>
+      )
+    }
+    {
+      portfolio && (
+        <a href={portfolio}>
+          <Icon name="site" class="size-9 inline " />
         </a>
       )
     }

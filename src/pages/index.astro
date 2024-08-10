@@ -1,44 +1,55 @@
 ---
 import { Image } from "astro:assets";
 import RootLayout from "../layouts/RootLayout.astro";
-import { homePageImages } from "../Constants";
+import { cloudImages } from "../../constants";
 ---
 
 <RootLayout>
   <section
-    class="flex flex-col h-[calc(100vh-100px)] items-center justify-between"
+    class="w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 "
   >
     <section
-      class="w-full flex flex-col-reverse md:flex-row items-center justify-between"
+      class="w-full lg:w-1/2 flex flex-col justify-center gap-5 text-left"
     >
-      <section
-        class="w-full flex flex-col-reverse md:flex-row-reverse items-center justify-between"
-      >
-        <section class="w-full md:w-1/2 flex flex-col justify-center gap-5">
-          <h2 class="text-4xl font-bold md:text-7xl">Welcome to Rejoice</h2>
-
-          <p class="text-xl md:text-4xl">
-            At Rejoice Estate Consultants, we provide top real estate services.
-            Our experienced team guides you through every step, ensuring you
-            make informed and confident decisions.
-          </p>
-        </section>
-        <Image
-          src={homePageImages.home2}
-          alt="Property in Mumbai"
-          width={320}
-          height={209}
-          class="w-full md:h-[450px] my-5 md:w-[40%] rounded-2xl object-cover object-center shadow-xl"
-        />
-      </section>
+      <h2 class="text-4xl font-bold md:text-5xl lg:text-7xl">
+        Welcome to Rejoice
+      </h2>
+      <p class="text-lg md:text-2xl lg:text-4xl">
+        At Rejoice Estate Consultants, we provide top real estate services. Our
+        experienced team guides you through every step, ensuring you make
+        informed and confident decisions.
+      </p>
     </section>
-    <footer class="w-full h-auto">
-      <img
-        src="https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/footer1"
-        alt="footer"
-        class="w-full h-auto"
-        loading="lazy"
-      />
-    </footer>
+    <Image
+      src={cloudImages.homeImageOne}
+      alt="Property in Mumbai"
+      width={1000}
+      height={1000}
+      class="w-full sm:w-[60%] md:w-[50%] lg:w-[40%] xl:h-[450px] my-5 rounded-2xl object-cover object-center shadow-xl"
+    />
+  </section>
+  <section
+    class="w-full flex flex-col-reverse lg:flex-row-reverse items-center justify-between gap-10 my-20"
+  >
+    <section
+      class="w-full lg:w-1/2 flex flex-col justify-center gap-5 text-left"
+    >
+      <h2 class="text-4xl font-semibold md:text-5xl lg:text-7xl">
+        Your Dream Property Awaits
+      </h2>
+      <p class="text-lg md:text-2xl lg:text-4xl">
+        Whether you're buying, selling, or investing, Rejoice Estate Consultants
+        is dedicated to helping you achieve your real estate goals. We leverage
+        our deep knowledge of the market and vast network to offer you
+        unparalleled opportunities and personalized service.
+      </p>
+    </section>
+    <Image
+      src={cloudImages.homeImageTwo}
+      alt="Property in Mumbai"
+      width={1000}
+      height={1000}
+      class="w-full sm:w-[60%] md:w-[50%] lg:w-[40%] xl:h-[450px] my-5 rounded-2xl object-cover object-center shadow-xl"
+    />
   </section>
 </RootLayout>

@@ -3,18 +3,17 @@ import { Image } from "astro:assets";
 import RootLayout from "../layouts/RootLayout.astro";
 import InquiryHero from "../components/InquiryHero.astro";
 import LookingForProperty from "../components/LookingForProperty.astro";
-import { homePageImages } from "../Constants";
+import { cloudImages } from "../../constants";
 import { Icon } from "astro-icon/components";
 ---
 
 <RootLayout title="Inquiry | Rejoice Estate Consultants">
   <InquiryHero />
-  <LookingForProperty />
   <a
     href="https://docs.google.com/forms/d/e/1FAIpQLSd08zDUvIseilWQnXR9Nh07awsyVadQvaFjsp8qkv_2LMoZtg/viewform"
     class="w-full flex items-center gap-5"
   >
-    <Icon name="form" class="size-20" />
+    <Icon name="form" class="size-10" />
     <p class="md:text-2xl">Fill out the form to submit buisness inquiry</p>
   </a>
 </RootLayout>

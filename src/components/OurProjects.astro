@@ -1,0 +1,23 @@
+---
+import { ourProjects } from "../../constants";
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<section class="mt-5">
+  <h1 class="font-bold text-4xl md:text-5xl mb-5">Ongoing Projects</h1>
+  <section
+    class="flex flex-col md:flex-row items-center gap-5 overflow-x-scroll px-0 md:px-10 mt-5 py-5"
+  >
+    {
+      ourProjects.map((project) => (
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          image={project.image}
+          github={project.github}
+          website={project.website}
+        />
+      ))
+    }
+  </section>
+</section>

@@ -1,0 +1,29 @@
+---
+import { contributors } from "../../constants";
+import Card from "./Card.astro";
+---
+
+<section class="w-full my-20 overflow-auto">
+  <h3 class="text-5xl font-bold">Special Thanks</h3>
+  <p class="text-md md:text-xl xl:text-2xl my-5">
+    We are profoundly grateful to the dedicated contributors who have played a
+    pivotal role in our journey. Your invaluable insights, hard work, and
+    unwavering support have been instrumental in shaping our vision and success.
+    This section is dedicated to celebrating your exceptional contributions and
+    the positive impact you've made.
+  </p>
+  <section
+    class="flex flex-col md:flex-row items-center gap-5 overflow-x-scroll px-0 md:px-10 mt-5 py-5"
+  >
+    {
+      contributors.map((member) => (
+        <Card
+          image={member.image}
+          name={member.name}
+          bio={member.description}
+          github={member.github}
+        />
+      ))
+    }
+  </section>
+</section>

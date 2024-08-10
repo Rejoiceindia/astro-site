@@ -1,17 +1,18 @@
 ---
 import { Icon } from "astro-icon/components";
 import RootLayout from "../layouts/RootLayout.astro";
+import { cloudImages } from "../../constants";
 ---
 
 <RootLayout title="Career | Rejoice Estate Consultants">
   <section
-    class="w-full flex flex-col-reverse md:flex-row gap-20 items-center justify-between"
+    class="w-full flex flex-col-reverse md:flex-row gap-20 items-center justify-between mt-5"
   >
     <!-- Heading -->
     <section
       class="flex flex-col-reverse md:flex-row justify-between w-full md:w-[50%]"
     >
-      <div class="flex flex-col gap-5 md:gap-20">
+      <div class="flex flex-col gap-5">
         <h1 class="text-4xl font-semibold">
           Join Our Dynamic Team and Shape the Future of Real Estate!
         </h1>
@@ -29,9 +30,9 @@ import RootLayout from "../layouts/RootLayout.astro";
     </section>
     <!-- Image -->
     <img
-      src="https://i.pinimg.com/564x/1f/ba/0a/1fba0a22a8089d9ffdbbe04fe97efeb6.jpg"
+      src={cloudImages.career}
       alt="Looking for property in mumbai"
-      class="w-full object-cover object-center place-items-center md:w-[50%] h-[400px] rounded-2xl shadow-xl"
+      class="w-full object-cover object-center place-items-center md:w-[40%]  rounded-2xl shadow-xl aspect-video"
     />
   </section>
 
@@ -39,7 +40,7 @@ import RootLayout from "../layouts/RootLayout.astro";
     href="https://docs.google.com/forms/d/e/1FAIpQLSd08zDUvIseilWQnXR9Nh07awsyVadQvaFjsp8qkv_2LMoZtg/viewform"
     class="w-full flex items-center gap-5"
   >
-    <Icon name="form" class="size-20" />
+    <Icon name="form" class="size-10" />
     <p class="md:text-2xl">Fill out the form to submit your resume</p>
   </a>
 </RootLayout>
