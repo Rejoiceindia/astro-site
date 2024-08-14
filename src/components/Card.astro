@@ -12,6 +12,7 @@ interface Props {
 }
 
 import { Icon } from "astro-icon/components";
+
 const {
   name,
   bio,
@@ -27,59 +28,141 @@ const {
 
 <div
   class={`
-    px-2 py-5 md:px-5 md:py-5 rounded-xl  flex flex-col gap-8 items-center justify-between w-[95%] md:min-w-[380px] md:w-[380px] shadow-lg cursor-pointer border-2  h-[340px] md:h-[380px] 
-    ${position === "Contributor" ? "bg-[#F0F0F0] border-gray-300" : "bg-softPink border-lightRed"}
-    `}
+    card-container
+    ${position === "Contributor" ? "contributor-bg" : "team-member-bg"}
+  `}
 >
-  <span class="w-full flex items-center gap-5">
-    <img
-      src={image}
-      alt="alt"
-      class="rounded-full size-16 md:size-24 object-cover object-center bg-white"
-    />
-    <span class="flex flex-col">
-      <h5 class="text-md md:text-2xl font-bold">{name}</h5>
-      <h6 class="text-darkGray">{position}</h6>
+  <span class="card-header">
+    <img src={image} alt="alt" class="card-image" />
+    <span class="card-name-container">
+      <h5 class="card-name">{name}</h5>
+      <h6 class="card-position">{position}</h6>
     </span>
   </span>
-  <p class="">
+  <p class="card-bio">
     {bio}
   </p>
-  <span class="w-full text-left space-x-2 z-auto flex items-center">
+  <span class="card-social-links">
     {
       facebook && (
-        <a href={facebook}>
-          <Icon name="facebook" class="size-9 inline" />
+        <a href={facebook} class="social-icon-link">
+          <Icon name="facebook" class="social-icon" />
         </a>
       )
     }
     {
       instagram && (
-        <a href={instagram}>
-          <Icon name="insta" class="size-9 inline rounded-full" />
+        <a href={instagram} class="social-icon-link">
+          <Icon name="insta" class="social-icon" />
         </a>
       )
     }
     {
       github && (
-        <a href={github}>
-          <Icon name="github" class="size-9 inline" />
+        <a href={github} class="social-icon-link">
+          <Icon name="github" class="social-icon" />
         </a>
       )
     }
     {
       youtube && (
-        <a href={youtube}>
-          <Icon name="youtube" class="size-9 inline " />
+        <a href={youtube} class="social-icon-link">
+          <Icon name="youtube" class="social-icon" />
         </a>
       )
     }
     {
       portfolio && (
-        <a href={portfolio}>
-          <Icon name="site" class="size-9 inline " />
+        <a href={portfolio} class="social-icon-link">
+          <Icon name="site" class="social-icon" />
         </a>
       )
     }
   </span>
 </div>
+
+<style>
+  /* Card Container */
+  .card-container {
+    padding: 1.25rem 0.625rem;
+    padding-bottom: 1.25rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    min-width: 23.75rem;
+    max-width: 23.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: 2px solid;
+    height: 21.25rem;
+    max-height: 23.75rem;
+  }
+
+  /* Background Colors */
+  .contributor-bg {
+    background-color: #f0f0f0;
+    border-color: #d3d3d3;
+  }
+
+  .team-member-bg {
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+  }
+
+  .card-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .card-image {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    object-position: center;
+    background-color: #fff;
+  }
+
+  .card-name-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-name {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .card-position {
+    color: #595959;
+  }
+
+  .card-bio {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .card-social-links {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .social-icon-link {
+    display: inline-block;
+  }
+
+  .social-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    display: inline-block;
+  }
+</style>

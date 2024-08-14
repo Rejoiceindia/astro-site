@@ -9,6 +9,20 @@ interface TeamMember {
     youtube?: string;
     portfolio?: string;
 }
+interface ProjectData {
+    title: string;
+    description: string;
+    image: string;
+    github: string;
+    website?: string;
+}
+interface Contributor {
+    name: string;
+    image: string;
+    description: string;
+    github: string;
+}
+
 const Team: TeamMember[] = [
     {
         name: "Prashant Zende",
@@ -64,7 +78,6 @@ const Team: TeamMember[] = [
         portfolio: "https://portfolio-aryan-ten.vercel.app/"
     },
 ];
-
 const cloudImages = {
     homeImageOne: "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/HomeWelcomeImageOne",
     homeImageTwo: "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/homeImage2",
@@ -72,13 +85,6 @@ const cloudImages = {
     inquiry: "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/inquiryImage",
     career: "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/career",
     about: "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/aboutUsimage"
-}
-
-interface Contributor {
-    name: string;
-    image: string;
-    description: string;
-    github: string;
 }
 const contributors: Contributor[] = [
     {
@@ -106,14 +112,6 @@ const contributors: Contributor[] = [
         github: "https://github.com/danalee"
     }
 ];
-
-interface ProjectData {
-    title: string;
-    description: string;
-    image: string;
-    github: string;
-    website?: string;
-}
 const ourProjects: ProjectData[] = [
     {
         title: "FOS",
@@ -123,7 +121,6 @@ const ourProjects: ProjectData[] = [
         website: "#"
     }
 ]
-
 const endorsedProjects: ProjectData[] = [
     {
         title: "Firecrawl",

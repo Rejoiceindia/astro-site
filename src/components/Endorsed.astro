@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard.astro";
   <h1 class="font-bold text-4xl md:text-5xl mb-5">Endorsed Projects</h1>
 
   <section
-    class="flex flex-col md:flex-row items-center gap-5 overflow-x-scroll px-0 md:px-10 mt-5 py-5"
+    class="flex md:flex-wrap flex-row items-center gap-5 overflow-x-scroll md:justify-start px-0 md:px-10 mt-5 py-5"
   >
     {
       endorsedProjects.map((project) => (
@@ -20,5 +20,5 @@ import ProjectCard from "./ProjectCard.astro";
         />
       ))
     }
-</section>
+  </section>
 </section>
