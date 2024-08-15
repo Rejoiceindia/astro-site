@@ -54,7 +54,7 @@ const Team: TeamMember[] = [
     },
     {
         name: "Shivam Gupta",
-        bio: "Parashant Zende  is the visionary behind Rejoice Estate Consultants. Leveraging an extensive network of over 10,000 real estate agents, he brings unparalleled industry insight and connections to our team.",
+        bio: "Shivam has a strong background in machine learning and a passion for data-driven insights, He is known for his analytical mindset and innovative approach.",
         position: "Intern",
         image:
             "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/MrGupta",
@@ -123,11 +123,10 @@ const ourProjects: ProjectData[] = [
 ]
 const endorsedProjects: ProjectData[] = [
     {
-        title: "Firecrawl",
-        description: "Firecrawl is an emerging tool that offers powerful website crawling and data extraction capabilities, making it useful for converting website content into structured data formats suitable for large language models and other applications. The project is still under active development but provides functional capabilities for local use.",
-        image: "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/Firecrawl",
-        github: "https://github.com/mendableai/firecrawl",
-        website: "https://www.firecrawl.dev/"
+        title: "SCOUT-2",
+        description: "SCOUT is an AI-powered personal assistant that aims to empower people through intelligent, adaptive, and personalized support. Built on a foundation of open-source software and community collaboration, SCOUT offers a transparent and user-controlled approach to AI assistance. It serves as a platform for innovation and experimentation, enabling users to push the boundaries of artificial intelligence across various domains.",
+        image: "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/scout",
+        github: "https://github.com/mendableai/firecrawl"
     }
 ]
 export {
