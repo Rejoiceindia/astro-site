@@ -53,6 +53,14 @@ const Team: TeamMember[] = [
         github: "https://github.com/DigitalHallucinations",
     },
     {
+        name: "Fredrick Pwol",
+        bio: "Fredrick is unparalleled patient guy with expertise in AI/ML. His curiosity fuels his passion as an tech solutions wiz.",
+        position: "Tech Co-Founder",
+        image:
+            "https://res.cloudinary.com/aryansharma/image/upload/f_auto,q_auto/fredrik",
+        github: "https://github.com/Fredpwol",
+    },
+    {
         name: "Shivam Gupta",
         bio: "Shivam has a strong background in machine learning and a passion for data-driven insights, He is known for his analytical mindset and innovative approach.",
         position: "Intern",
